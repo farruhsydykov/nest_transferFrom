@@ -115,6 +115,7 @@ export class EthersController {
         method = query.method,
         price = query.price,
         chain = query.chain;
+        console.log(2)
         if (!address || !method || !price) {
             console.log("here")
             throw new HttpException("Invalid request.", 400);
